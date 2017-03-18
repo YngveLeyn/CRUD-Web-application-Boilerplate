@@ -7,23 +7,19 @@
         </div>
     
         <form class="form" action="../pages/create.php" method="post">
-           <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
-                        <label class="control-label">Name</label>
-                        <div class="controls">
+           <div class="form__field <?php echo !empty($nameError)?'error':'';?>">
+                        <label class="field__label">Name</label>
                             <input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
                             <?php if (!empty($nameError)): ?>
-                                <span class="help-inline"><?php echo $nameError;?></span>
+                                <span class="input__warning"><?php echo $nameError;?></span>
                             <?php endif; ?>
-                        </div>
                       </div>
-                      <div class="control-group <?php echo !empty($descriptionError)?'error':'';?>">
-                        <label class="control-label">Description</label>
-                        <div class="controls">
+                      <div class="form__field <?php echo !empty($descriptionError)?'error':'';?>">
+                        <label class="field__label">Description</label>
                             <input name="description" type="text"  placeholder="Description" value="<?php echo !empty($description)?$description:'';?>">
                             <?php if (!empty($descriptionError)): ?>
-                                <span class="help-inline"><?php echo $descriptionError;?></span>
+                                <span class="input__warning"><?php echo $descriptionError;?></span>
                             <?php endif; ?>
-                        </div>
                       </div>       
             <div class="form__actions">
                 <button type="submit" class="btn">Create</button>
