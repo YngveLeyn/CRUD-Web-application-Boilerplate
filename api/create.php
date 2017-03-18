@@ -3,8 +3,10 @@
     require '../config/database.php';
  
     if ( !empty($_POST)) {
-        
-         
+        // keep track validation errors
+        $nameError = null;
+        $descriptionError = null;
+
         // keep track post values
         $name = $_POST['name'];
         $description = $_POST['description'];
@@ -18,9 +20,8 @@
          
         if (empty($description)) {
             $descriptionError = 'Please enter a description';
-            $valid = false;
+            $valid = false;       
         }
-         
          
         // insert data
         if ($valid) {
