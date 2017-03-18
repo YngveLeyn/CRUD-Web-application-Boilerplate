@@ -10,6 +10,10 @@ button{
     padding: 10px 20px;
     background-color: $color-secondary;
 }
+.btn--round{
+    @extend .btn;
+    border-radius: 200px;
+}
 a{
     color: $color-main;
     text-decoration: none;

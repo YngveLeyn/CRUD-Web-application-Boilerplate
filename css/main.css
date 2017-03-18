@@ -491,12 +491,15 @@ button {
   background-color: black;
   border: none; }
 
-.btn {
+.btn, .btn--round {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   padding: 10px 20px;
   background-color: #d81b60; }
+
+.btn--round {
+  border-radius: 200px; }
 
 a {
   color: #01579b;

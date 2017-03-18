@@ -38,6 +38,6 @@
         </div>
      </div>
      <div class="admin-panel">
-        <p><a href="pages/create.php" class="btn">Create</a></p>
+        <p><a href="pages/create.php" class="btn--round"> <i class="fa fa-plus"></i> New entry </a></p>
      </div>
      </section>
