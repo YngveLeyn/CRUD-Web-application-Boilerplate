@@ -1,4 +1,16 @@
 button{
     color: silver; 
-    background-color: black;   
-}       
+    background-color: black; 
+    border: none;  
+}   
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+    padding: 10px 20px;
+    background-color: $color-secondary;
+}
+a{
+    color: $color-main;
+    text-decoration: none;
+}

@@ -454,14 +454,46 @@ template {
 .col-12 {
   width: 100%; }
 
-.table .row {
+.table .row [class*="col-"] {
+  text-align: left;
   border: 1px solid #eceff1; }
-  .table .row [class*="col-"] {
-    text-align: left; }
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+  display: relative; }
+  .form .form__field {
+    margin: 0 auto 10px auto;
+    width: 400px;
+    text-align: center;
+    display: block; }
+    .form .form__field .field__label {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left; }
+  .form .form__actions {
+    margin: 30px 0 0 0; }
+  .form input {
+    display: inline-block;
+    margin: 0 auto;
+    width: 80%; }
 
 button {
   color: silver;
-  background-color: black; }
+  background-color: black;
+  border: none; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #d81b60; }
+
+a {
+  color: #01579b;
+  text-decoration: none; }
 
 .page {
   margin: 100px auto;
