@@ -19,7 +19,7 @@
                         echo '<div class="col-2">'. $row['id'] . '</div>';
                         echo '<div class="col-3">'. $row['name'] . '</div>';
                         echo '<div class="col-4">'. $row['description'] . '</div>';
-                        echo '<div class="col-3"> <a href="../api/read.php?id='.$row['id'].'"><i class="fa fa-folder-open-o"></i> </a></div>';
+                        echo '<div class="col-3"> <a href="../pages/read.php?id='.$row['id'].'"><i class="fa fa-folder-open-o"></i> </a></div>';
                         echo '</div>';
                 } 
 
