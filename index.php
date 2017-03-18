@@ -18,23 +18,33 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->   
-
+        <section class="page">
+            <div class="page__container">
+                <h1 class="title--hero">Our database</h1>
+        <div class="entries table">
+            <div class="row">
+                <div class="col-4">ID</div>
+                <div class="col-4">Name</div>
+                <div class="col-4">Description</div>
+            </div>
         <?php
             include 'config/database.php';
             $pdo = Database::connect();
             $sql = 'SELECT * FROM entries ORDER BY id DESC';
-           
+            
                 foreach ($pdo->query($sql) as $row) {
-                        echo '<tr>';
-                        echo '<td>'. $row['id'] . '</td>';
-                        echo '<td>'. $row['name'] . '</td>';
-                        echo '<td>'. $row['description'] . '</td>';
-                        echo '</tr>';
-                }
+                        echo '<div class="row">';
+                        echo '<div class="col-4">'. $row['id'] . '</div>';
+                        echo '<div class="col-4">'. $row['name'] . '</div>';
+                        echo '<div class="col-4">'. $row['description'] . '</div>';
+                        echo '</div>';
+                } 
             
             Database::disconnect();
         ?>
-     
+        </div>
+     </div>
+     </section>
         <script src="js/app.js"></script>
     </body>
 </html>

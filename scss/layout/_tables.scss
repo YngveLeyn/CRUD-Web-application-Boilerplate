@@ -1,0 +1,8 @@
+.table{
+    .row{
+        border: 1px solid $silver;
+        [class*="col-"] {
+            text-align: left;
+        }
+    }
+}

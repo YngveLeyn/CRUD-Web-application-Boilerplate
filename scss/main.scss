@@ -2,13 +2,16 @@
 
 @import "helpers/variables";
 @import "helpers/mixins";
+@import "helpers/typography";
 
 @import "layout/grid";
+@import "layout/tables";
 @import "layout/header";
 @import "layout/footer"; 
 
 @import "components/buttons";
 @import "pages/page";
+@import "pages/index";
 
 @import "vendors/font-awesome/scss/font-awesome";
      

@@ -403,6 +403,12 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
+.title--hero {
+  text-transform: uppercase; }
+
 .row::after {
   content: "";
   clear: both;
@@ -410,8 +416,7 @@ template {
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
-  border: 1px solid red; }
+  padding: 15px; }
 
 .col-1 {
   width: 8.33%; }
@@ -449,9 +454,23 @@ template {
 .col-12 {
   width: 100%; }
 
+.table .row {
+  border: 1px solid #eceff1; }
+  .table .row [class*="col-"] {
+    text-align: left; }
+
 button {
   color: silver;
   background-color: black; }
+
+.page {
+  margin: 100px auto;
+  text-align: center; }
+  .page .page__container {
+    min-width: 600px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: inline-block; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
