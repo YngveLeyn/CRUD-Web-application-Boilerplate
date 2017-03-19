@@ -14,7 +14,17 @@
             text-align: left;  
         }
     }
-    .form__actions{
+    .field__title{
+        font-size: 12px;     
+        text-align: left;
+        display: block; 
+    }
+    .field__content{
+        font-size: 16px; 
+        text-align: left;
+        display: block; 
+    }
+    .form__actions{ 
         margin: 30px 0 0 0;
     }
     input{

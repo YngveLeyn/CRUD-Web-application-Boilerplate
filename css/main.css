@@ -472,6 +472,14 @@ template {
       width: 80%;
       margin: 0 auto;
       text-align: left; }
+  .form .field__title {
+    font-size: 12px;
+    text-align: left;
+    display: block; }
+  .form .field__content {
+    font-size: 16px;
+    text-align: left;
+    display: block; }
   .form .form__actions {
     margin: 30px 0 0 0; }
   .form input {
@@ -487,16 +495,16 @@ template {
     margin: 0 auto; }
 
 button {
-  color: silver;
   background-color: black;
+  color: silver;
   border: none; }
 
 .btn, .btn--round {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
   padding: 10px 20px;
-  background-color: #d81b60; }
+  background-color: #d81b60;
+  color: #fff;
+  text-decoration: none; }
 
 .btn--round {
   border-radius: 200px; }
